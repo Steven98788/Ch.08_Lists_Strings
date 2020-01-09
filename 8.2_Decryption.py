@@ -8,6 +8,12 @@ your program 40 times. Use a FOR loop from -20 to +20 to generate all the possib
 
 Secret Message: Lxwp{j}~uj}rxw|*)bx~)l{jltnm)}qn)lxmn7)]qn)ox{ln)r|)\][XWP)r}q)x~*
 '''
+sMsg='Lxwp{j}~uj}rxw|*)bx~)l{jltnm)}qn)lxmn7)]qn)ox{ln)r|)\][XWP)r}q)x~*'
 
-
-
+for change in range(-20,20):
+    decryption=""
+    for i in range(len(sMsg)):
+        num=ord((sMsg[i]))
+        num+= change
+        decryption+=chr(num)
+    print(decryption)
